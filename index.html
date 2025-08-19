@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tank Marble Suppliers</title>
+
+  <!-- Bootstrap + jQuery -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Swiper, AOS, GSAP, Three -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger" href="index.html">Tank Marble Suppliers</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/919414345579" target="_blank" class="btn btn-danger ms-lg-3">WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero container py-5">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-6" data-aos="fade-right">
+      <h1 class="display-5 fw-bold text-dark mb-3">Premium Marble Temple</h1>
+      <p class="lead text-muted">Sourced from Makrana. Crafted for Small, Medium and Big Size Temples.</p>
+      <div class="d-flex gap-3 mt-3">
+        <a href="products.html" class="btn btn-danger btn-lg">Explore Products</a>
+        <a href="#contact" class="btn btn-outline-danger btn-lg">Get Quote</a>
+      </div>
+    </div>
+    <div class="col-lg-6 position-relative" data-aos="fade-left">
+      <img src="https://5.imimg.com/data5/ANDROID/Default/2022/12/EZ/SY/IA/164416394/product-jpeg-1000x1000.jpg" class="hero-img rounded-4 shadow-lg" alt="Marble Slabs"/>
+      <canvas id="three-corner"></canvas>
+    </div>
+  </div>
+</header>
+
+<!-- Featured Stones -->
+<section class="container py-5">
+  <h2 class="section-title">Featured Stones</h2>
+  <div class="swiper featured-swiper" id="featured-slides">
+    <div class="swiper-wrapper"><!-- injected by script.js --></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="container py-5" id="about">
+  <h2 class="section-title">Popular Categories</h2>
+  <div class="row g-4">
+    <div class="col-6 col-lg-3" data-aos="zoom-in">
+      <div class="cat-tile">
+        <img src="https://rmsmarbles.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-01-at-5.27.38-PM-500x674.jpeg.webp" alt="">
+        <div class="overlay">Medium Size</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+      <div class="cat-tile">
+        <img src="https://themarbleartstudio.com/wp-content/uploads/2022/08/new-makrana-white-marble-img.jpg" alt="">
+        <div class="overlay">Small Size</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+      <div class="cat-tile">
+        <img src="https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/ExtraLarge/makrana-white-temple-construct-20240808085943175.jpg" alt="">
+        <div class="overlay">Big Size</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+      <div class="cat-tile">
+        <img src="https://as1.ftcdn.net/v2/jpg/12/35/04/54/1000_F_1235045464_9S9H0elmKNuu4XsgVXuPRxW1VzlmVNEb.jpg" alt="">
+        <div class="overlay">Granite Temple</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="swiper testi-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testi-card">“Best quality and finish.” — Vivek Sharma</div>
+        <div class="swiper-slide testi-card">“On-time delivery for our hotel project.” — Hiralal</div>
+        <div class="swiper-slide testi-card">“Premium slabs. Great polish.” — Komal</div>
+        <div class="swiper-slide testi-card">“Competitive pricing. Honest dealing.” — Shahnawaz</div>
+        <div class="swiper-slide testi-card">“Makrana originals. Trusted source.” — Ritesh</div>
+        <div class="swiper-slide testi-card">“After-sales support is solid.” — Farhan</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="container py-5" id="contact">
+  <h2 class="section-title">Visit Us</h2>
+  <div class="row g-4">
+    <div class="col-lg-7">
+      <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.943143293011!2d74.7233163!3d27.0319625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396b9d9e99356c85%3A0xfc3e4de2cd1d71d9!2sTank%20Marble%20Suppliers%2C%20Makrana!5e0!3m2!1sen!2sin!4v1755618815150!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="p-4 h-100 rounded-4 border">
+        <h5 class="mb-3">Tank Marble Suppliers</h5>
+        <p class="mb-2">Bypass Road, Makrana, Rajasthan, India</p>
+        <p class="mb-4">PIN 341505</p>
+        <a href="https://wa.me/919414345579?text=Hi%2C%20I%27m%20interested%20in%20Makrana%20marble" target="_blank" class="btn btn-danger btn-lg w-100">WhatsApp Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-top py-4">
+  <div class="container text-center small">
+    <div class="fw-semibold">Tank Marble Suppliers</div>
+    <div>Bypass Road, Makrana, Rajasthan, India — 341505</div>
+    <div class="text-muted mt-2">&copy; 2025</div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
